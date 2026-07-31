@@ -9,7 +9,7 @@ import datetime
 from google.genai import types
 import os
 
-DEFAULT_MODEL='gemini-3.5-flash'
+DEFAULT_MODEL='gemini-2.5-flash'
 NANO_BANANA_MODEL='gemini-3-pro-image'
 
 get_weather = McpToolset(
@@ -105,7 +105,7 @@ city_drawer = LlmAgent(
         
     3. Use the `display_image_with_adk` tool with the absolute file path of the generated image.
     """,
-    tools=[nano_banana, display_image_with_adk]
+    tools=[nano_banana,display_image_with_adk]
 )
 
 root_agent = SequentialAgent(

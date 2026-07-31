@@ -44,6 +44,12 @@ export MAPS_API_KEY="$(gcloud services api-keys get-key-string "cityscape-maps-m
 
 See offical [documentation](https://github.com/GoogleCloudPlatform/vertex-ai-creative-studio/tree/main/experiments/mcp-genmedia) for how to install it for local development. 
 
+Note: Just install the mcp-genmedia server. You don't need to run server standalone,adk agent spawns local instance of it during execution.
+
+### Fill in .env with your GCP credentials
+GOOGLE_CLOUD_PROJECT=your_gcp_project_id
+GOOGLE_CLOUD_LOCATION=your_gcp_location
+
 ## Get Started
 
 ```sh
